@@ -1,0 +1,39 @@
+{
+    "name": "i9w3b/laravel-menu-manager",
+    "description": "Menu Laravel Arrastar/Soltar Como Wordpress",
+    "keywords": ["Laravel", "Menu", "Wordpress", "Builder"],
+    "authors": [
+    	{
+            "name": "Marcelo Sena",
+            "email": "marcelosenaonline@gmail.com"
+        },
+        {
+            "name": "Cristian Garcia",
+            "email": "informacion@cristiangarcia.co",
+            "role" : "Original Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "illuminate/support": "5.* || 6.* || 7.*"
+    },
+    "autoload": {
+        "psr-4": {
+          "Harimayco\\Menu\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Harimayco\\Menu\\MenuServiceProvider"
+            ],
+            "aliases": {
+                "Menu": "Harimayco\\Menu\\Facades\\Menu",
+                "AlertMenu": "Harimayco\\Menu\\Facades\\AlertMenu"
+            }
+        }
+    }
+}
