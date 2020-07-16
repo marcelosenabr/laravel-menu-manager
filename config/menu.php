@@ -18,10 +18,11 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Publicar rota para gerenciar menus | true ou false
+    | Publicar rota para gerenciar (get e post) menus | true ou false
     |--------------------------------------------------------------------------
     */
     'routes_view' => false,
+    'routes_post' => false,
 
     /*
     |--------------------------------------------------------------------------

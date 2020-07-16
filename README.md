@@ -44,16 +44,17 @@ php artisan migrate
 
 Pronto
 
-Publicar a rota para gerenciar os menus:
+Publicar a rota para gerenciar os menus, para melhor gestão dos nossos projetos deixamos as rotas desabilitadas, para começar a usar tem que ativar as configurações `routes_view e routes_post` alterando os valores para `true`:
 
 ```php
 // arquivo config/menu.php
 /*
 |--------------------------------------------------------------------------
-| Publicar rota para gerenciar menus | true ou false
+| Publicar rota para gerenciar (get e post) menus | true ou false
 |--------------------------------------------------------------------------
 */
 'routes_view' => false,
+'routes_post' => false,
 ```
 
 ## Exemplo de uso
